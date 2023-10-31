@@ -1,0 +1,15 @@
+<script language="JavaScript">
+var space = " ";
+var speed = "60";
+var pos = 0;
+var msg = "// Neco Dance ";
+function Scroll()
+{
+document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", speed); 
+}
+Scroll();
+</script>
+<video mute="true" autoplay="true" loop="true" src="https://duckiz.github.io/DiscordWebm/Webm%20videos/neco-arc_bounce.webm">
